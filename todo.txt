@@ -1,0 +1,10 @@
+1) create controller endpoints
+	- add model folder
+		- product object
+	- add filter get endpoint
+	
+
+		
+2) create mocky client
+
+3) add nunit test project
