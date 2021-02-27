@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace PoqTestApi.Services
 {
+    /// <inheritdoc/>
     public class ProductFilter : IProductFilter
     {
         public IEnumerable<Product> GetFilteredProducts(IEnumerable<Product> allProducts, int maxPrice = 0, string size = null)

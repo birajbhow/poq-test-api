@@ -8,7 +8,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PoqTestApi.Clients
-{    
+{
+    /// <inheritdoc/>
     public class ProductApiClient : IProductApiClient
     {
         private readonly string _baseUrl;
@@ -20,6 +21,11 @@ namespace PoqTestApi.Clients
             _logger = logger;
         }
 
+        /// <summary>
+        /// This method will fetch product data from external api suing fluent url package (flurl)
+        /// <see cref="https://flurl.dev/"/>
+        /// </summary>
+        /// <returns>List of products</returns>
         public async Task<IEnumerable<Product>> GetProducts()
         {
             try

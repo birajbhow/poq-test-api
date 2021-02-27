@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace PoqTestApi.Services
 {
+    /// <inheritdoc/>
     public class ProductHighlighter : IProductHighlighter
     {
         public IEnumerable<Product> HighlightProducts(IEnumerable<Product> products, string highlightKeywords = null)

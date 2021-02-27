@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PoqTestApi.Services
 {
+    /// <inheritdoc/>
     public class ProductProcessor : IProductProcessor
     {
         private readonly IProductApiClient _apiClient;
