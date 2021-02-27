@@ -30,6 +30,8 @@ namespace PoqTestApi
 
             services.AddSingleton<IProductApiClient, ProductApiClient>();
             services.AddSingleton<IProductFilter, ProductFilter>();
+            services.AddSingleton<IProductHighlighter, ProductHighlighter>();
+            services.AddSingleton<IProductProcessor, ProductProcessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

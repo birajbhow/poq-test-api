@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PoqTestApi.Clients
-{
+{    
     public class ProductApiClient : IProductApiClient
     {
         private readonly string _baseUrl;
@@ -26,7 +26,7 @@ namespace PoqTestApi.Clients
             {
                 var response = await ApiUrl.GetJsonAsync<ApiResponse>();
 
-                _logger.LogDebug("Products Api Response", response);
+                _logger.LogDebug("Product Api Full Response", response);
 
                 return response.Products;
             }

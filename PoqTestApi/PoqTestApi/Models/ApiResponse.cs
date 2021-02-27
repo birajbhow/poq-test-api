@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace PoqTestApi.Models
 {
+    /// <summary>
+    /// External api response object
+    /// </summary>
     public class ApiResponse
     {
         public IEnumerable<Product> Products { get; set; }
