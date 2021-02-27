@@ -14,6 +14,6 @@ namespace PoqTestApi.Services
         /// <param name="products">List of products</param>
         /// <param name="highlightKeywords">Highlight keywords</param>
         /// <returns>Highlighted products</returns>
-        IEnumerable<Product> HighlightProducts(IEnumerable<Product> products, string highlightKeywords);
+        IEnumerable<Product> HighlightProducts(IEnumerable<Product> products, string highlightKeywords = null);
     }
 }

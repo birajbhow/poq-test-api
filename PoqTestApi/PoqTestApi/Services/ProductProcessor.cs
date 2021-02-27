@@ -35,7 +35,7 @@ namespace PoqTestApi.Services
             // Build filterd response object
             return new FilteredResponse
             {
-                Products = highlightedProducts ?? filteredProducts,
+                Products = highlightedProducts,
                 CommonWords = BuildCommonWordsList(filteredProducts)
             };            
         }

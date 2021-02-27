@@ -6,11 +6,11 @@ namespace PoqTestApi.Services
 {
     public class ProductHighlighter : IProductHighlighter
     {
-        public IEnumerable<Product> HighlightProducts(IEnumerable<Product> products, string highlightKeywords)
+        public IEnumerable<Product> HighlightProducts(IEnumerable<Product> products, string highlightKeywords = null)
         {   
             if (string.IsNullOrWhiteSpace(highlightKeywords))
             {
-                return null;
+                return products;
             }
 
             var result = new List<Product>();
