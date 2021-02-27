@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 namespace PoqTestApi.Services
 {
     /// <summary>
-    /// A product filter service encapsulating all filtering and highlighting logic 
+    /// A product filter service encapsulating filtering logic 
     /// </summary>
     public interface IProductFilter
     {
         /// <summary>
-        /// Filter and highlight products based on max price, size and highlight keywords
+        /// This method filter products based on max price or/and size
         /// </summary>
-        /// <param name="maxprice">Maximum price of a product</param>
-        /// <param name="size">Size of a product</param>
-        /// <param name="highlight">Description highlighting keywords</param>
+        /// <param name="allProducts">List of all products</param>
+        /// <param name="maxPrice">Maximum price of a product</param>
+        /// <param name="size">Size of a product</param>        
         /// <returns>Filtered list of products</returns>
         IEnumerable<Product> GetFilteredProducts(IEnumerable<Product> allProducts, int maxPrice = 0, string size = null);
     }

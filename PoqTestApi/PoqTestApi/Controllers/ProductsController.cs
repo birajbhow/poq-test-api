@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PoqTestApi.Models;
 using PoqTestApi.Services;
 using System;
 using System.Threading.Tasks;
@@ -23,7 +22,7 @@ namespace PoqTestApi.Controllers
         /// <summary>
         /// Get filtered product response
         /// </summary>
-        /// <param name="maxprice">Maximum price of a product</param>
+        /// <param name="maxPrice">Maximum price of a product</param>
         /// <param name="size">Size of a product</param>
         /// <param name="highlight">Description highlighting keywords(comma separated)</param>
         /// <returns>Filtered response object</returns>
