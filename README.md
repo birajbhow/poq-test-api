@@ -2,7 +2,7 @@
 POQ test web api
 
 # How to run
-1) Fork the code
+1) Download the code
 2) Open visual studio (preferrably 2019)
 3) Open the solution file
 4) Build
